@@ -1,0 +1,45 @@
+#member-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    .member-card {
+        width: 30%;
+        padding: 1rem;
+        margin: 1rem 0.5rem;
+        background: rgba( $green, 0.3 );
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        border-radius: 5px;
+
+        .avatar {
+            @include avatar( 125px );
+            margin-right: 1rem;
+            border: 2px solid $white;
+        }
+
+        .member-details {
+            flex-grow: 1;
+            p {
+                font-family: 'Poppins', sans-serif;
+            }
+    
+            .member-title {
+                font-size: 25px;
+                font-weight: bold;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+    
+            .member-meta {
+                font-size: 20px;
+                font-weight: light;
+                color: rgba( $white, 0.7 );
+                text-transform: uppercase;
+            }
+        }
+    }
+}

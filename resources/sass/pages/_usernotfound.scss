@@ -1,0 +1,25 @@
+#nouser-options {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    .col {
+        border: 1px solid $white;
+        border-radius: 10px;
+        padding: 1rem 1rem 2rem 1rem;
+        margin: 0 1rem;
+
+        .card-link {
+            font-size: 20px;
+            text-decoration: none;
+            padding-bottom:4px;
+            border-bottom: 2px solid $white;
+            justify-self: flex-end;
+            &:hover {
+                color: $green;
+                border-bottom: 2px solid $green;
+            }
+        }
+    }
+}

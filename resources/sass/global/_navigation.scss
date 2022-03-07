@@ -1,0 +1,26 @@
+#main-nav {
+    z-index: 999999;
+    background: $green;
+    height: 70px;
+    
+    .navbar-brand, .nav-link.active {
+        color: $white;
+    }
+
+    .navbar-brand {
+        .logo {
+            height: 50px;
+            margin: auto 10px;
+        }
+    }
+
+    .nav-link {
+        color: rgba( $white, 0.75 );
+        font-family: 'Poppins';
+        text-transform: uppercase;
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}

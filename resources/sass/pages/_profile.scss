@@ -1,0 +1,65 @@
+.profile {
+    .profile-links {
+        list-style: none;
+        margin-bottom: 2rem;
+        padding: 1rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid $white;
+        align-content: flex-start;
+
+        a {
+            margin-right: 12px;
+            height: 100%;
+            color: $white;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: 3px solid $black;
+
+            &:hover, &:focus {
+                text-decoration: none;
+                color: $green;
+                border-bottom: 3px solid $green;
+            }
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+
+    #discord-facts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        background: rgba( $black, 0.8 );
+
+        .avatar {
+            @include avatar( 200px );
+            margin-bottom: 1rem;
+        }
+
+        .profile-title {
+            h1 {
+                padding-left: 1rem;
+                color: $green;
+                small {
+                    clear: both;
+                    color: rgba( $white, 0.4 );
+                    font-size: 18px;
+                    text-transform: none;
+                }
+            }
+
+            p {
+                font-family: 'Popins', sans-serif;
+                font-size: 20px;
+                margin-top: 8px;
+                padding: 0 0 0 1rem;
+            }
+        }
+    }
+}

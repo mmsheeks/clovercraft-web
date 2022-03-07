@@ -1,0 +1,12 @@
+.btn-outline {
+    background: transparent;
+    color: $text-primary;
+    border: 1px solid $text-primary;
+    &:hover {
+        background: $text-hover;
+        color: $black;
+        border: 1px solid $black;
+        box-shadow: 0 0 0 0 0.25 $text-hover;
+        transition: all ease-in-out;
+    }
+}
